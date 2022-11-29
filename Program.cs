@@ -26,4 +26,14 @@ void Show2DArray (int [,] array)
     }
 }
 
-Show2DArray(Creat2DRandomArray (0, 9, 4, 5));
+Console.WriteLine("Введите минимальное значение переменной: ");
+int minValue = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите максимальное значение переменной: ");
+int maxValue = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите кол-во строк: ");
+int rows = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите кол-во столбцов: ");
+int columns = Convert.ToInt32(Console.ReadLine());
+
+
+Show2DArray(Creat2DRandomArray (minValue, maxValue, rows, columns));
